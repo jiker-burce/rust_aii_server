@@ -1,0 +1,20 @@
+[package]
+name = "rc-database"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.6.3", features = [
+    "mysql",
+    "runtime-tokio-rustls",
+    "chrono",
+    "json",
+] }
+
+thiserror = "1.0.40"
+dotenvy = "0.15.7"
+tokio-test = "0.4.2"
+
+hex-literal = "0.4.1"
